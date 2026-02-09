@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Educativa Nicolás Infante Díaz</title>
+
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; margin: 0; }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2e8b57);
+            color: white; text-align: center; padding: 40px 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') center/cover no-repeat;
+            height: 180px; display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 2rem; text-shadow: 0 0 10px #000; font-weight: bold;
+        }
+        .info-section {
+            width: 90%; max-width: 1000px; background: white;
+            padding: 25px; margin: 25px auto; border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .info-section h2 { color: #2e8b57; border-left: 5px solid #4CAF50; padding-left: 15px; }
+        .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 15px; }
+        .value-box { background: #e8f5e9; padding: 15px; border-radius: 8px; text-align: center; font-weight: bold; color: #256029; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .card-button {
+            background: #ffffff; border: 2px solid #4CAF50; padding: 22px;
+            border-radius: 15px; cursor: pointer; transition: all 0.3s ease;
+            text-align: center; display: block; text-decoration: none; color: #333;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .card-button:hover {
+            background: #4CAF50; color: white; transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(76, 175, 80, 0.3);
+        }
+        .card-button h3 { margin: 0; font-size: 1.1rem; line-height: 1.3; }
+        .card-button p { font-size: 0.85rem; margin-top: 10px; opacity: 0.8; }
+        select { width: 100%; padding: 12px; margin-top: 10px; font-size: 1rem; border-radius: 8px; border: 1px solid #ddd; }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Unidad Educativa Nicolás Infante Díaz</h1>
+    <p>Plataforma de Recursos Académicos</p>
+</header>
+
+<div class="hero">Informática • Ciencias • Contabilidad</div>
+
+<div class="info-section">
+    <h2>Sobre Nosotros</h2>
+    <p>Esta plataforma permite a los estudiantes conocer las carreras ofertadas, los años lectivos y las asignaturas correspondientes de la Unidad Educativa Nicolás Infante Díaz.</p>
+</div>
+
+<div class="info-section">
+    <h2>Misión</h2>
+    <p>Formar estudiantes íntegros, críticos y competentes, capaces de desenvolverse en el ámbito académico, social y tecnológico, promoviendo valores éticos, responsabilidad y compromiso con la sociedad.</p>
+</div>
+
+<div class="info-section">
+    <h2>Visión</h2>
+    <p>Ser una institución educativa referente a nivel local y nacional, reconocida por su excelencia académica, innovación pedagógica y uso responsable de la tecnología en la formación de bachilleres competentes.</p>
+</div>
+
+<div class="info-section">
+    <h2>Valores Institucionales</h2>
+    <div class="values">
+        <div class="value-box">Respeto</div>
+        <div class="value-box">Responsabilidad</div>
+        <div class="value-box">Honestidad</div>
+        <div class="value-box">Solidaridad</div>
+        <div class="value-box">Disciplina</div>
+        <div class="value-box">Compromiso</div>
+    </div>
+</div>
+
+<div class="info-section">
+    <h2>Selecciona tu Carrera y Año</h2>
+    <label>Carrera:</label>
+    <select id="carrera" onchange="mostrarAnios()">
+        <option value="">-- Selecciona una carrera --</option>
+        <option value="informatica">Informática</option>
+        <option value="ciencias">Ciencias</option>
+        <option value="contabilidad">Contabilidad</option>
+    </select>
+
+    <div id="anio-section" style="display:none;">
+        <br>
+        <label>Año:</label>
+        <select id="anio" onchange="mostrarMaterias()">
+            <option value="">-- Selecciona un año --</option>
+            <option value="1">1ro de Bachillerato</option>
+            <option value="2">2do de Bachillerato</option>
+            <option value="3">3ro de Bachillerato</option>
+        </select>
+    </div>
+</div>
+
+<div class="info-section" id="materias-section" style="display:none;">
+    <h2>Asignaturas Disponibles</h2>
+    <p style="color: #666; margin-bottom: 20px;">Haz clic en la materia para acceder a su contenido:</p>
+    <div id="materias-cards" class="cards"></div>
+</div>
+
+<script>
+const materias = {
+    informatica: {
+        1: [
+            { n: "Programación y Base de Datos", r:"D:\programacion1.html" },
+            { n: "Sistemas Operativos y Redes", r: "D:\sistemasoperativos1eraño.html.html" },
+            { n: "Soporte Técnico", r: "D:\soportetecnico1eraño.html.html" },
+            { n: "Aplicaciones Ofimáticas Locales y en Línea", r: "D:\aplicacionesof1eraño.html.html" },
+            { n: "Física", r: "D:\fisica1eraño.html.html" },
+            { n: "Matemáticas", r: "D:\matematicas1eraño.html -.html" },
+            { n: "Química", r: "D:\quimica1eraño.html.html" },
+            { n: "Biología", r: "D:\biologioa1eraño.html.html" },
+            { n: "Filosofía", r: "D:\filosifia1eraño.html.html" },
+            { n: "Historia", r: "D:\historia1eraño.html.html" },
+            { n: "Lengua y Literatura", r: "D:\lenguayliteratura1eraño.html.html" },
+            { n: "Emprendimiento y Gestión", r: "D:\emprendimientoygestio1eraño.html.html" },
+            { n: "Educación Física", r: "D:\educacionfisica1eraño.html.html" }
+        ],
+        2: [
+            { n: "Programación y Base de Datos", r: "D:\programacion2.html" },
+            { n: "Sistemas Operativos y Redes", r: "D:\sistemasoperativos2.html" },
+            { n: "Soporte Técnico", r: "D:\soportetecnico2.html" },
+            { n: "Diseño y Desarrollo Web", r: "D:\diseñoydesarrolloweb2.html" },
+            { n: "Física", r: "D:\fiscia2.html" },
+            { n: "Matemáticas", r: "D:\matematicas2.html" },
+            { n: "Química", r: "D:\quimica2.html" },
+            { n: "Biología", r: "D:\biologia2.html" },
+            { n: "Filosofía", r: "D:\filosifa2.html" },
+            { n: "Historia", r: "D:\historia2.html" },
+            { n: "Educación para la Ciudadanía", r: "D:\educacionparalaciudadnia2.html" },
+            { n: "Lengua y Literatura", r: "D:\lenguayliteratura2.html" },
+            { n: "Emprendimiento y Gestión", r: "D:\emprendimientoygestio2.html" },
+            { n: "Educación Física", r: "D:\educacionfisica2.html" },
+            { n: "Educación Cultural y Artística", r: "D:\educacionculturaartisitca2.html" },
+            { n: "Acompañamiento Integral en el Aula", r: "D:\acompañamientointegralenelaula2.html" }
+        ],
+        3: [
+            { n: "Programación y Base de Datos", r: "D:\programacion3.html" },
+            { n: "Sistemas Operativos y Redes", r: "D:\sistemasoperativos3.html" },
+            { n: "Diseño y Desarrollo Web", r: "D:\diseñoydesarrolloweb3.html" },
+            { n: "Soporte Técnico", r: "D:\soportetecnico3.html" },
+            { n: "Aplicaciones Ofimáticas", r: "D:\aplicacionesofilmaticas3.html" },
+            { n: "Matemáticas", r: "D:\matematicas3.html" },
+            { n: "Física", r: "D:\fiscia3.html" },
+            { n: "Química", r: "D:\quimica3.html" },
+            { n: "Biología", r: "D:\biologia3.html" },
+            { n: "Lengua y Literatura", r: "D:\lenguayliteratura3.html" },
+            { n: "English", r: "D:\ingles3.html" },
+            { n: "Emprendimiento y Gestión", r: "D:\emprendimientoygestio3.html" }
+        ]
+    },
+    ciencias: {
+        1: [
+            { n: "Lengua y Literatura", r: "lengua.html" },
+            { n: "Biología", r: "biologia.html" },
+            { n: "English Foreign Language (Inglés)", r: "ingles.html" },
+            { n: "Matemáticas", r: "matematicas.html" },
+            { n: "Acompañamiento integral en el aula", r: "acompanamiento.html" },
+            { n: "Emprendimiento y Gestión", r: "emprendimiento.html" },
+            { n: "Educación Cultural y Artística", r: "artistica.html" },
+            { n: "Química", r: "quimica.html" },
+            { n: "Educación para la Ciudadanía", r: "ciudadania.html" },
+            { n: "Física", r: "fisica.html" },
+            { n: "Educación Física", r: "ed_fisica.html" },
+            { n: "Filosofía", r: "filosofia.html" },
+            { n: "Historia", r: "historia.html" }
+        ],
+        2: [
+            { n: "Lengua y Literatura", r: "lengua.html" },
+            { n: "Filosofía", r: "filosofia.html" },
+            { n: "Biología", r: "biologia.html" },
+            { n: "Historia", r: "historia.html" },
+            { n: "English Foreign Language (Inglés)", r: "ingles.html" },
+            { n: "Matemáticas", r: "matematicas.html" },
+            { n: "Física", r: "fisica.html" },
+            { n: "Educación Cultural y Artística", r: "artistica.html" },
+            { n: "Química", r: "quimica.html" },
+            { n: "Educación para la Ciudadanía", r: "ciudadania.html" },
+            { n: "Emprendimiento y Gestión", r: "emprendimiento.html" },
+            { n: "Educación Física", r: "ed_fisica.html" },
+            { n: "Acompañamiento integral en el aula", r: "acompanamiento.html" }
+        ],
+        3: [
+            { n: "Investigación en Ciencia y Tecnología", r: "investigacion.html" },
+            { n: "Acompañamiento Integral en el Aula y Cívica, Ética e Integridad", r: "civica.html" },
+            { n: "Lengua y Literatura", r: "lengua.html" },
+            { n: "Historia", r: "historia.html" },
+            { n: "Química", r: "quimica.html" },
+            { n: "Biología", r: "biologia.html" },
+            { n: "Núm. Complejos y Métodos de Demost. Matemát.", r: "mate_avanzada.html" },
+            { n: "Redacción Creativa", r: "redaccion.html" },
+            { n: "Matemáticas", r: "matematicas.html" },
+            { n: "Emprendimiento y Gestión", r: "emprendimiento.html" },
+            { n: "Física", r: "fisica.html" },
+            { n: "English Foreign Language (Inglés)", r: "ingles.html" },
+            { n: "Educación Física", r: "ed_fisica.html" },
+            { n: "Acompañamiento para actividades de evaluación final de grado", r: "evaluacion.html" },
+            { n: "Corrientes Filosóficas", r: "corrientes.html" }
+        ]
+    },
+    contabilidad: {
+        1: [
+            { n: "Contabilidad General", r: "cont_gral.html" },
+            { n: "Paquetes Contables y Tributarios", r: "paquetes.html" },
+            { n: "Lengua y Literatura", r: "lengua.html" },
+            { n: "Educación Física", r: "ed_fisica.html" },
+            { n: "Historia", r: "historia.html" },
+            { n: "Programa de Participación Estudiantil (PPE)", r: "ppe.html" },
+            { n: "Biología", r: "biologia.html" },
+            { n: "Tributación", r: "tributacion.html" },
+            { n: "Física", r: "fisica.html" },
+            { n: "Química", r: "quimica.html" },
+            { n: "Educación para la Ciudadanía", r: "ciudadania.html" },
+            { n: "Matemáticas", r: "matematicas.html" },
+            { n: "English Foreign Language (Inglés)", r: "ingles.html" },
+            { n: "Acompañamiento Integral en el Aula", r: "acompanamiento.html" },
+            { n: "Educación Cultural y Artística", r: "artistica.html" },
+            { n: "Filosofía", r: "filosofia.html" },
+            { n: "Emprendimiento y Gestión", r: "emprendimiento.html" }
+        ],
+        2: [
+            { n: "Tributación", r: "tributacion.html" },
+            { n: "Filosofía", r: "filosofia.html" },
+            { n: "Matemáticas", r: "matematicas.html" },
+            { n: "English Foreign Language (Inglés)", r: "ingles.html" },
+            { n: "Lengua y Literatura", r: "lengua.html" },
+            { n: "Física", r: "fisica.html" },
+            { n: "Contabilidad General", r: "cont_gral.html" },
+            { n: "Educación Cultural y Artística", r: "artistica.html" },
+            { n: "Paquetes Contables y Tributarios", r: "paquetes.html" },
+            { n: "Educación Física", r: "ed_fisica.html" },
+            { n: "Emprendimiento y Gestión", r: "emprendimiento.html" },
+            { n: "Química", r: "quimica.html" },
+            { n: "Biología", r: "biologia.html" },
+            { n: "Acompañamiento Integral en el Aula y Cívica, Ética e Integridad", r: "civica.html" }
+        ],
+        3: [
+            { n: "Contabilidad Bancaria", r: "bancaria.html" },
+            { n: "Contabilidad de Costos", r: "costos.html" },
+            { n: "Química", r: "quimica.html" },
+            { n: "Acompañamiento para actividades de evaluación final de Bach", r: "evaluacion.html" },
+            { n: "Física", r: "fisica.html" },
+            { n: "Emprendimiento y Gestión", r: "emprendimiento.html" },
+            { n: "Matemáticas", r: "matematicas.html" },
+            { n: "English Foreign Language", r: "ingles.html" },
+            { n: "Educación Física", r: "ed_fisica.html" },
+            { n: "Paquetes Contables y Tributarios", r: "paquetes.html" },
+            { n: "Historia", r: "historia.html" },
+            { n: "Gestión del Talento Humano", r: "talento_humano.html" },
+            { n: "Contabilidad General", r: "cont_gral.html" },
+            { n: "Lengua y Literatura", r: "lengua.html" },
+            { n: "FOL (Formación y Orientación Laboral)", r: "fol.html" },
+            { n: "Biología", r: "biologia.html" }
+        ]
+    }
+};
+
+function mostrarAnios() {
+    const carrera = document.getElementById("carrera").value;
+    document.getElementById("anio-section").style.display = carrera ? "block" : "none";
+    document.getElementById("materias-section").style.display = "none";
+}
+
+function mostrarMaterias() {
+    const carrera = document.getElementById("carrera").value;
+    const anio = document.getElementById("anio").value;
+    const contenedor = document.getElementById("materias-cards");
+
+    if (!carrera || !anio) return;
+
+    contenedor.innerHTML = "";
+    document.getElementById("materias-section").style.display = "block";
+
+    materias[carrera][anio].forEach(materia => {
+        contenedor.innerHTML += `
+            <a href="${materia.r}" class="card-button">
+                <h3>${materia.n}</h3>
+                <p>Click para ver material</p>
+            </a>
+        `;
+    });
+}
+</script>
+
+</body>
+</html>

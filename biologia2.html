@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biología - 2do de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #10b981; /* Verde esmeralda médico */
+            --secondary: #064e3b;
+            --accent: #34d399;
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #065f46);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .organ-box {
+            background: rgba(16, 185, 129, 0.05);
+            border: 1px solid var(--primary);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .health-note {
+            background: #064e3b;
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 4px solid var(--accent);
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Biología II</h1>
+    <p>2do Año de Bachillerato - Anatomía y Fisiología Humana</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Explorando la Máquina Humana</h2>
+        <p>En este segundo año, el estudio se centra en el ser humano como un organismo complejo. Analizamos cómo los sistemas se coordinan para procesar nutrientes, eliminar desechos y asegurar la supervivencia de la especie. Es el año de la medicina preventiva y el conocimiento corporal.</p>
+        
+        <div class="organ-box">
+            <span style="font-size: 2.5rem;">🫀</span>
+            <div>
+                <strong>Sistemas en Estudio:</strong> Digestivo, Excretor, Circulatorio y Reproductor.
+            </div>
+        </div>
+
+        <h3>Contenidos del Curso:</h3>
+        <ul>
+            <li><strong>Nutrición y Digestión:</strong> Transformación de macromoléculas en energía utilizable.</li>
+            <li><strong>Sistema Excretor:</strong> Filtración de la sangre y equilibrio osmótico a través de los riñones.</li>
+            <li><strong>Reproducción Humana:</strong> Gametogénesis, fecundación y desarrollo embrionario.</li>
+            <li><strong>Salud Sexual:</strong> Prevención de ITS y métodos anticonceptivos.</li>
+        </ul>
+    </section>
+
+    
+
+[Image of the human digestive system diagram]
+
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Autocuidado:</strong> Entiendes los síntomas de tu cuerpo y cómo llevar una vida más saludable.</li>
+                    <li><strong>Base Médica:</strong> Es fundamental para cualquier carrera en el área de la salud o biotecnología.</li>
+                    <li><strong>Conciencia Social:</strong> Información científica sobre reproducción y salud sexual responsable.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Nomenclatura Anatómica:</strong> Debes aprender cientos de nombres de órganos, tejidos y conductos.</li>
+                    <li><strong>Gráficos Complejos:</strong> El estudio de diagramas biológicos requiere mucha atención al detalle.</li>
+                    <li><strong>Sensibilidad:</strong> Algunos temas reproductivos o de enfermedades pueden ser impactantes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section>
+        <div class="health-note">
+            <h3>Biología e Informática: Wearables</h3>
+            <p>La tecnología actual depende de la biología. El desarrollo de **smartwatches** que miden el ritmo cardíaco o sensores de glucosa se basa en la fisiología que estudias en este nivel. Un informático con conocimientos biológicos puede programar los algoritmos que salvan vidas hoy en día.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Científica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

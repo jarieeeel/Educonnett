@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - 2do de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #ef4444; /* Rojo revolución */
+            --secondary: #450a0a;
+            --accent: #fca5a5;
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #7f1d1d);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .era-box {
+            background: rgba(239, 68, 68, 0.05);
+            border: 1px solid var(--primary);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .history-note {
+            background: #1e1b4b;
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 4px solid var(--primary);
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Historia II</h1>
+    <p>2do Año de Bachillerato - Modernidad y Sistemas Económicos</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>El Nacimiento del Mundo Moderno</h2>
+        <p>En este curso analizamos los procesos que rompieron con el feudalismo y dieron paso a la era en la que vivimos. Estudiamos el Renacimiento, el Humanismo y cómo el descubrimiento de nuevas rutas comerciales transformó la economía mundial hacia el capitalismo mercantilista.</p>
+        
+        <div class="era-box">
+            <span style="font-size: 2.5rem;">⚙️</span>
+            <div>
+                <strong>Grandes Procesos:</strong> Del Renacimiento artístico a la Revolución Industrial.
+            </div>
+        </div>
+
+        <h3>Contenidos de 2do Año:</h3>
+        <ul>
+            <li><strong>El Renacimiento y Humanismo:</strong> El regreso a los valores clásicos y el método científico.</li>
+            <li><strong>El Capitalismo y Mercantilismo:</strong> La acumulación de metales y el auge del comercio internacional.</li>
+            <li><strong>Las Revoluciones Liberales:</strong> El fin de las monarquías absolutas y el nacimiento de las repúblicas.</li>
+            <li><strong>Arte y Cultura:</strong> El Barroco y la Ilustración como motores del cambio social.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Visión Económica:</strong> Entiendes el origen de los bancos, el dinero y los mercados actuales.</li>
+                    <li><strong>Contexto Político:</strong> Comprendes por qué hoy vivimos en democracia y bajo el concepto de "derechos humanos".</li>
+                    <li><strong>Aprecio Artístico:</strong> Aprendes a leer el significado detrás de las grandes obras de la historia.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Mapas Geopolíticos:</strong> Requiere entender cómo cambiaron las fronteras de los imperios en pocos siglos.</li>
+                    <li><strong>Densidad de Fechas:</strong> Muchos procesos ocurren simultáneamente en Europa y América.</li>
+                    <li><strong>Conflictos Bélicos:</strong> Analizar las causas y consecuencias de guerras constantes puede ser complejo.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="history-note">
+            <h3>Historia e Informática: La Imprenta</h3>
+            <p>Para un informático, estudiar el Renacimiento es clave porque es cuando aparece la **Imprenta de Gutenberg**. Este invento fue el primer gran sistema de "distribución de datos" masiva. Es el antepasado directo de los servidores y el protocolo HTTP. Entender la historia de la información te ayuda a valorar el poder de la tecnología actual.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Humanística | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

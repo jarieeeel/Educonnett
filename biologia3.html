@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biología - 3ro de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #ec4899; /* Rosa Magenta */
+            --secondary: #7e22ce; /* Púrpura */
+            --bg: #0c0a09;
+            --card-bg: #1c1917;
+            --text: #f5f5f4;
+            --accent: #f472b6;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #4c0519, #0c0a09);
+            border-bottom: 4px solid var(--primary);
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.2);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 50px;
+            padding: 0 20px;
+        }
+
+        .main-card {
+            background: var(--card-bg);
+            border: 1px solid #292524;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        h1 { font-size: 3rem; margin: 0; color: #fff; letter-spacing: -1px; }
+        h2 { color: var(--accent); font-weight: 300; font-size: 1.8rem; }
+
+        .dna-display {
+            background: #000;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 25px 0;
+            border: 1px solid var(--secondary);
+            font-family: 'Courier New', monospace;
+            color: var(--primary);
+            letter-spacing: 5px;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .system-box {
+            background: #292524;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid var(--secondary);
+        }
+
+        .bio-it-connection {
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(126, 34, 206, 0.1);
+            border: 1px solid var(--secondary);
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #78716c;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Biología Superior</h1>
+    <p>3ro de Bachillerato - Sistemas del Cuerpo Humano y Herencia</p>
+</header>
+
+<div class="container">
+    <div class="main-card">
+        <h2>La Ingeniería de la Vida</h2>
+        <p>En el último año, exploramos la fisiología humana en detalle. Analizamos cómo los sistemas nervioso, circulatorio y endocrino trabajan en conjunto para mantener la homeostasis, y cómo la biotecnología está permitiendo editar el código de la vida.</p>
+
+        <div class="dna-display">
+            A-T-C-G-G-C-T-A-T-T-A-C
+        </div>
+
+        <div class="grid">
+            <div class="system-box">
+                <h3>Sistemas Vitales</h3>
+                <p>Estudio profundo del sistema nervioso (el "CPU" biológico) y el sistema inmunológico.</p>
+            </div>
+            <div class="system-box">
+                <h3>Genética Molecular</h3>
+                <p>Transcripción y traducción del ADN, mutaciones y leyes de la herencia mendeliana.</p>
+            </div>
+            <div class="system-box">
+                <h3>Bioética</h3>
+                <p>Debate sobre la manipulación genética, clonación y el impacto de la ciencia en la sociedad.</p>
+            </div>
+        </div>
+
+        <div class="bio-it-connection">
+            <h3 style="margin-top: 0; color: var(--accent);">🧬 Biología e Informática: Bioinformática</h3>
+            <p style="margin-bottom: 0;">Para un informático, la biología de 3ro es fascinante porque el ADN es, literalmente, un **sistema de almacenamiento de datos binario** (aunque de 4 bases). Estudiar el sistema nervioso te ayuda a entender cómo se diseñaron las **Redes Neuronales Artificiales** de la IA actual. La biología moderna no se entiende sin algoritmos y Big Data.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 - Ciencias de la Vida y la Salud | 3er Año de Bachillerato
+</footer>
+
+</body>
+</html>

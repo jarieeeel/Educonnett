@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECA - 2do de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #f59e0b; /* Ámbar creativo */
+            --secondary: #6b21a8; /* Púrpura artístico */
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #4c1d95);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; }
+        
+        .art-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .art-item {
+            background: rgba(245, 158, 11, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--primary);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .digital-art-note {
+            background: #1e1b4b;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Educación Cultural y Artística</h1>
+    <p>2do Año de Bachillerato - Gestión, Patrimonio y Arte Digital</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Del Artista al Gestor Cultural</h2>
+        <p>En el segundo año de bachillerato, ECA nos invita a convertirnos en protagonistas de la cultura. Estudiamos el <strong>patrimonio cultural</strong> del Ecuador y aprendemos a organizar proyectos artísticos que utilicen tanto medios tradicionales como herramientas tecnológicas modernas.</p>
+        
+        <div class="art-grid">
+            <div class="art-item">Patrimonio Vivo</div>
+            <div class="art-item">Arte Digital</div>
+            <div class="art-item">Gestión Cultural</div>
+            <div class="art-item">Fotografía</div>
+        </div>
+
+        <h3>Contenidos de 2do Año:</h3>
+        <ul>
+            <li><strong>El Patrimonio Cultural:</strong> Valoración y conservación de monumentos, tradiciones y saberes.</li>
+            <li><strong>Instalaciones y Performance:</strong> Formas de arte contemporáneo que interactúan con el público.</li>
+            <li><strong>La Fotografía como Testimonio:</strong> El uso del lente para documentar la realidad social y cultural.</li>
+            <li><strong>Arte y Tecnología:</strong> Uso de software de diseño y edición para crear propuestas innovadoras.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Desarrollo Creativo:</strong> Potencia tu capacidad de imaginar soluciones visuales únicas.</li>
+                    <li><strong>Identidad Nacional:</strong> Conectas con tus raíces a través del arte popular y el patrimonio.</li>
+                    <li><strong>Habilidades Digitales:</strong> Aprendes a usar herramientas que sirven para el marketing y diseño web.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Subjetividad:</strong> El arte no tiene una sola respuesta correcta, lo cual puede ser confuso.</li>
+                    <li><strong>Costo de Materiales:</strong> Algunos proyectos requieren herramientas específicas o software de pago.</li>
+                    <li><strong>Tiempo de Producción:</strong> Una buena obra artística requiere paciencia y muchas horas de práctica.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="digital-art-note">
+            <h3>ECA e Informática: UI/UX Design</h3>
+            <p>Para un informático, ECA es el primer paso hacia el **Diseño de Interfaces (UI) y Experiencia de Usuario (UX)**. Todo lo que aprendes sobre teoría del color, composición y equilibrio visual es lo que define si una aplicación es atractiva o si los usuarios la odiarán. El arte es el alma de la tecnología.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Artística | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

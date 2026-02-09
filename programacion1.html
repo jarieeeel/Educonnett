@@ -1,0 +1,132 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación en 1ro de Bachillerato - Guía Completa</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --bg: #f8fafc;
+            --text: #334155;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--secondary); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: #f0fdf4; border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: #fef2f2; border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .tagline { font-style: italic; color: #cbd5e1; margin-top: 10px; }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Programación en 1ro de Bachillerato</h1>
+    <p class="tagline">Construyendo los cimientos del pensamiento computacional</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>¿Qué ofrece esta asignatura?</h2>
+        <p>En el primer año de bachillerato técnico, la asignatura de Programación no se trata solo de escribir código, sino de aprender a <strong>resolver problemas complejos</strong> mediante algoritmos. El enfoque principal es transitar desde el lenguaje humano hacia una lógica que las máquinas puedan interpretar.</p>
+        
+        <h3>Contenidos Fundamentales:</h3>
+        <ul>
+            <li><strong>Lógica Algorítmica:</strong> Creación de diagramas de flujo y pseudocódigo para estructurar soluciones antes de tocar el teclado.</li>
+            <li><strong>Estructuras de Control:</strong> Uso de condicionales (Si/Entonces) y bucles (Repetir/Mientras) para controlar el flujo de los programas.</li>
+            <li><strong>Tipos de Datos y Variables:</strong> Cómo la computadora almacena información numérica, de texto y booleana.</li>
+            <li><strong>Introducción a Lenguajes:</strong> Generalmente se inicia con herramientas como PSeInt para lógica, o lenguajes accesibles como Python o C++ básico.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Pensamiento Crítico:</strong> Enseña a descomponer un problema grande en pasos pequeños y manejables.</li>
+                    <li><strong>Alta Demanda Laboral:</strong> Es la base de una de las industrias mejor pagadas a nivel mundial.</li>
+                    <li><strong>Creatividad Aplicada:</strong> Permite crear algo desde cero, como una calculadora, un pequeño juego o un sistema de notas.</li>
+                    <li><strong>Autonomía:</strong> El estudiante aprende a aprender y a buscar soluciones por su cuenta.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Curva de Aprendizaje:</strong> Al principio puede ser frustrante debido a los errores de sintaxis y la lógica abstracta.</li>
+                    <li><strong>Requiere Paciencia:</strong> Un pequeño punto y coma olvidado puede detener todo un sistema, lo que exige alta tolerancia a la frustración.</li>
+                    <li><strong>Actualización Constante:</strong> Lo que aprendes hoy puede cambiar en pocos años, obligando al estudio permanente.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Impacto en el Perfil Estudiantil</h2>
+        <p>Estudiar programación en 1ro de Bachillerato otorga una ventaja competitiva única, incluso si el estudiante decide no seguir una carrera en sistemas. La capacidad de automatizar tareas y entender cómo funcionan las aplicaciones que usamos a diario es una habilidad esencial en el siglo XXI.</p>
+        <blockquote>
+            "Programar te enseña a pensar, no solo a usar una herramienta."
+        </blockquote>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Técnica en Informática
+</footer>
+
+</body>
+</html>

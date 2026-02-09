@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química - 2do de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #d946ef; /* Magenta brillante */
+            --secondary: #701a75;
+            --accent: #f0abfc;
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #4a044e);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .molecule-box {
+            background: rgba(217, 70, 239, 0.05);
+            border: 2px solid var(--primary);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .chem-formula {
+            font-size: 2.2rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .tech-box {
+            background: #1e1b4b;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Química II</h1>
+    <p>2do Año de Bachillerato - El mundo del Carbono y las Reacciones</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>¿Qué ofrece esta asignatura en 2do año?</h2>
+        <p>En este nivel, la química se vuelve "viva". Estudiamos la <strong>Química Orgánica</strong>, centrada en el átomo de carbono y su capacidad única para formar cadenas largas. También analizamos la velocidad de las reacciones y el equilibrio químico, fundamentales para procesos industriales y biológicos.</p>
+        
+        <h3>Temas Fundamentales:</h3>
+        <ul>
+            <li><strong>Hidrocarburos:</strong> Alcanos, alquenos y alquinos; la base de los combustibles fósiles.</li>
+            <li><strong>Grupos Funcionales:</strong> Alcoholes, aldehídos, cetonas y ácidos carboxílicos.</li>
+            <li><strong>Cinética Química:</strong> ¿Qué factores hacen que una reacción sea más rápida o lenta?</li>
+            <li><strong>Equilibrio Químico:</strong> El estado donde los reactivos y productos conviven en balance.</li>
+        </ul>
+    </section>
+
+    <div class="molecule-box">
+        <span class="chem-formula">CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O</span>
+        <p style="color: #94a3b8; font-size: 0.9rem;">Combustión del Metano: Energía en forma pura</p>
+    </div>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Comprensión Industrial:</strong> Entiendes cómo se fabrican plásticos, medicinas y combustibles.</li>
+                    <li><strong>Lógica de Nomenclatura:</strong> Desarrollas un lenguaje preciso para describir sustancias complejas.</li>
+                    <li><strong>Conciencia Ambiental:</strong> Base para entender el impacto de las emisiones de carbono.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Memorización Estructural:</strong> Hay miles de compuestos orgánicos con reglas de nombre específicas.</li>
+                    <li><strong>Estequiometría:</strong> Los cálculos de moles y masas requieren una precisión matemática absoluta.</li>
+                    <li><strong>Complejidad Molecular:</strong> Dibujar estructuras tridimensionales puede ser un reto espacial.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="tech-box">
+            <h3>Química y Tecnología de Materiales</h3>
+            <p>En informática, la química orgánica es la madre de la **nanotecnología** y los **polímeros conductores**. Los nuevos materiales para pantallas OLED y carcasas de fibra de carbono nacen de los principios que se estudian en este nivel. Entender el carbono es entender el futuro de los componentes físicos.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Científica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

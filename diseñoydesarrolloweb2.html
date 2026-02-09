@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Desarrollo Web - 2do Bachillerato</title>
+    <style>
+        :root {
+            --primary: #06b6d4; /* Cian brillante */
+            --secondary: #8b5cf6; /* Púrpura */
+            --bg: #030712;
+            --card-bg: #111827;
+            --text: #f9fafb;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #083344, #4c1d95);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; }
+        
+        .web-stack {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .stack-pill {
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .html { background: #ea580c; color: white; }
+        .css { background: #2563eb; color: white; }
+        .js { background: #ca8a04; color: white; }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.03);
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 3px solid var(--secondary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Diseño y Desarrollo Web</h1>
+    <p>2do Año de Bachillerato - Creando el Internet del Mañana</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>El Stack Tecnológico</h2>
+        <p>En este curso aprendemos que una web profesional nace de la combinación de tres pilares fundamentales. No solo escribimos código, sino que diseñamos experiencias de usuario (UX) atractivas y funcionales.</p>
+        
+        <div class="web-stack">
+            <div class="stack-pill html">HTML5 (Estructura)</div>
+            <div class="stack-pill css">CSS3 (Estilo)</div>
+            <div class="stack-pill js">JavaScript (Lógica)</div>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Diseño Responsivo</h3>
+                <p>Uso de <strong>Media Queries</strong> para que la web se vea perfecta en tablets, PCs y celulares.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Interactividad</h3>
+                <p>Creación de menús desplegables, sliders y validación de formularios con JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>¿Qué aprenderás este año?</h2>
+        <ul>
+            <li><strong>Multimedia Web:</strong> Inserción y optimización de audio, video y gráficos vectoriales (SVG).</li>
+            <li><strong>Frameworks de Diseño:</strong> Introducción a herramientas como Bootstrap o Tailwind para acelerar el desarrollo.</li>
+            <li><strong>Hosting y Dominios:</strong> Cómo subir tu proyecto a un servidor real para que todo el mundo lo vea.</li>
+            <li><strong>Accesibilidad:</strong> Crear sitios que puedan ser utilizados por personas con discapacidades.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Creatividad Total:</strong> Puedes materializar cualquier idea visual que tengas.</li>
+                    <li><strong>Salida Laboral:</strong> Es una de las ramas con más empleo remoto en la actualidad.</li>
+                    <li><strong>Resultados Visibles:</strong> Ves el cambio en tiempo real mientras escribes el código.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Compatibilidad:</strong> Lo que se ve bien en Chrome puede verse mal en Safari o Firefox.</li>
+                    <li><strong>Curva de Aprendizaje:</strong> JavaScript puede ser frustrante cuando empiezas con la lógica avanzada.</li>
+                    <li><strong>Actualización:</strong> Cada mes salen herramientas nuevas que hay que aprender.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Especialización Técnica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

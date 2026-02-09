@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Operativos y Redes - 2do Bachillerato</title>
+    <style>
+        :root {
+            --primary: #3b82f6; /* Azul servidor */
+            --secondary: #0f172a;
+            --accent: #60a5fa;
+            --bg: #020617;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #1e40af);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .net-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .net-card {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--primary);
+            text-align: center;
+        }
+
+        .terminal {
+            background: #000;
+            color: #f1f5f9;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9rem;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(249, 115, 22, 0.1); border-left: 5px solid #f97316; padding: 15px; border-radius: 4px; }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sistemas Operativos y Redes</h1>
+    <p>2do Año de Bachillerato - Administración de Servicios y Conectividad</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Avanzando hacia la Administración</h2>
+        <p>En segundo año, el estudiante deja de ser un usuario para convertirse en un **Administrador de Sistemas**. Se profundiza en la gestión de redes corporativas y en la seguridad de los datos mediante el uso de sistemas operativos de servidor como Windows Server y distribuciones avanzadas de Linux.</p>
+        
+        <div class="terminal">
+            $ sudo apt-get update && sudo apt-get install apache2<br>
+            # Configurando el servidor web...
+        </div>
+
+        <h3>Núcleos de Aprendizaje:</h3>
+        <div class="net-grid">
+            <div class="net-card">
+                <strong>Servidores</strong>
+                <p>Configuración de servicios DNS, DHCP y servidores web.</p>
+            </div>
+            <div class="net-card">
+                <strong>Subnetting</strong>
+                <p>División lógica de redes IP para optimizar el tráfico.</p>
+            </div>
+            <div class="net-card">
+                <strong>Seguridad</strong>
+                <p>Firewalls, permisos de usuario y políticas de grupo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Redes de Área Local (LAN) Avanzadas</h2>
+        <p>Estudiamos el diseño de red bajo estándares profesionales. Esto incluye el cableado estructurado y la configuración de dispositivos de red intermedios.</p>
+        <ul>
+            <li><strong>Switches y Routers:</strong> Diferencia funcional y configuración básica.</li>
+            <li><strong>Estándares T568A/B:</strong> Creación de cables directos y cruzados con precisión técnica.</li>
+            <li><strong>Topologías Lógicas:</strong> Cómo fluye la información más allá de la conexión física.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Perfil de Administrador:</strong> Capacidad para gestionar centros de cómputo pequeños y medianos.</li>
+                    <li><strong>Especialización:</strong> Base necesaria para certificaciones internacionales (como CCNA).</li>
+                    <li><strong>Seguridad:</strong> Aprendes a proteger redes contra accesos no autorizados.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Hardware Crítico:</strong> Los errores en servidores pueden afectar a muchos usuarios a la vez.</li>
+                    <li><strong>Matemática de Red:</strong> El cálculo de subredes (binario) requiere mucha práctica.</li>
+                    <li><strong>Actualización:</strong> Los protocolos de seguridad cambian constantemente.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Especialización Técnica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

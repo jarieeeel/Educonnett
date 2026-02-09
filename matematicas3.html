@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas - 3ro de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #3b82f6; /* Azul eléctrico */
+            --bg: #000000;
+            --card-bg: #0a0a0a;
+            --text: #ffffff;
+            --accent: #60a5fa;
+            --border: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            padding: 80px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e3a8a 0%, #000 100%);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 50px;
+            padding: 0 20px;
+        }
+
+        .main-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+        }
+
+        h1 { font-size: 3.2rem; margin: 0; letter-spacing: -2px; }
+        h2 { color: var(--accent); font-weight: 300; font-size: 1.8rem; margin-top: 40px; }
+
+        .math-formula {
+            background: #111;
+            padding: 30px;
+            border-radius: 8px;
+            font-family: 'Times New Roman', serif;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 25px 0;
+            border: 1px solid #222;
+            color: var(--accent);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .topic-item {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .it-connection {
+            margin-top: 40px;
+            padding: 25px;
+            background: linear-gradient(to right, #1e3a8a33, transparent);
+            border-radius: 8px;
+            border: 1px solid #1e40af;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px;
+            color: #4b5563;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matemática Superior</h1>
+    <p>3ro de Bachillerato - El Lenguaje del Cambio y la Optimización</p>
+</header>
+
+<div class="container">
+    <div class="main-card">
+        <h2>Cálculo Diferencial e Integral</h2>
+        <p>En el último año, las matemáticas se vuelven dinámicas. Estudiamos las **derivadas** para entender la velocidad del cambio y las **integrales** para calcular áreas y volúmenes bajo curvas. Es la base de toda ingeniería moderna.</p>
+
+        <div class="math-formula">
+            $f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
+        </div>
+
+        <div class="grid">
+            <div class="topic-item">
+                <h3>Límites y Continuidad</h3>
+                <p>Análisis del comportamiento de las funciones cuando se acercan al infinito o a puntos críticos.</p>
+            </div>
+            <div class="topic-item">
+                <h3>La Derivada</h3>
+                <p>Cálculo de razones de cambio y optimización de funciones (máximos y mínimos).</p>
+            </div>
+            <div class="topic-item">
+                <h3>Cálculo Integral</h3>
+                <p>Operación inversa a la derivada, fundamental para encontrar acumulaciones y áreas.</p>
+            </div>
+        </div>
+
+        <div class="it-connection">
+            <h3 style="margin-top: 0;">Matemática e Informática</h3>
+            <p style="margin-bottom: 0;">¿Por qué importa? En **Data Science**, las derivadas permiten que las redes neuronales aprendan (backpropagation). En **Programación de Gráficos**, las integrales ayudan a calcular la iluminación y sombreado realista. Sin este nivel de matemática, la tecnología que conoces no existiría.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 - Pensamiento Lógico-Matemático | Preparación Universitaria
+</footer>
+
+</body>
+</html>

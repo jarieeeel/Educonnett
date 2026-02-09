@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación para la Ciudadanía - 2do Bachillerato</title>
+    <style>
+        :root {
+            --primary: #38bdf8; /* Azul cielo brillante */
+            --secondary: #0c4a6e;
+            --accent: #e0f2fe;
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #075985);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 10px; }
+        
+        .state-box {
+            background: rgba(56, 189, 248, 0.05);
+            border-left: 5px solid var(--primary);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .law-note {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary);
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Educación para la Ciudadanía</h1>
+    <p>2do Año de Bachillerato - La Organización del Estado y la Democracia</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>¿Qué estudiamos en este nivel?</h2>
+        <p>En el segundo año, nos enfocamos en el <strong>Estado Moderno</strong>. Analizamos cómo se divide el poder para evitar abusos y cómo los ciudadanos pueden vigilar la gestión pública a través de mecanismos de transparencia y rendición de cuentas.</p>
+        
+        <div class="state-box">
+            <strong>Eje Central:</strong> La democracia como forma de vida y las funciones del Estado (Ejecutiva, Legislativa, Judicial, Electoral y de Transparencia).
+        </div>
+
+        <h3>Contenidos de 2do Año:</h3>
+        <ul>
+            <li><strong>La Democracia Moderna:</strong> El significado de la soberanía popular y el sufragio universal.</li>
+            <li><strong>Funciones del Estado:</strong> Cómo se organiza el poder público en el Ecuador.</li>
+            <li><strong>Mecanismos de Control:</strong> La importancia de la participación ciudadana y la lucha contra la corrupción.</li>
+            <li><strong>Derechos y Deberes:</strong> El rol de la Constitución como norma suprema.</li>
+        </ul>
+    </section>
+
+    
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Conciencia Política:</strong> Entiendes cómo funcionan las elecciones y por qué es importante tu voto.</li>
+                    <li><strong>Empoderamiento:</strong> Conoces los canales legales para reclamar tus derechos ante el Estado.</li>
+                    <li><strong>Pensamiento Ético:</strong> Fomenta valores de honestidad y respeto a la ley.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Teoría Jurídica:</strong> Algunos artículos de la Constitución pueden ser densos y difíciles de interpretar.</li>
+                    <li><strong>Actualidad Crítica:</strong> Requiere estar informado sobre noticias nacionales, lo cual puede ser desalentador a veces.</li>
+                    <li><strong>Complejidad Institucional:</strong> Aprender todas las subdivisiones del Estado requiere mucha memoria.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="law-note">
+            <h3>Ciudadanía Digital e Informática</h3>
+            <p>Para un futuro profesional técnico, esta materia es vital para entender la **Gobernanza Digital**. Temas como la protección de datos personales, los delitos informáticos y el gobierno electrónico son aplicaciones directas de la ciudadanía en el mundo virtual. Saber cómo la ley protege la información es parte de ser un ciudadano responsable en el siglo XXI.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Ciudadana | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

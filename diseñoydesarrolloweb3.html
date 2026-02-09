@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web - 3ro Bachillerato</title>
+    <style>
+        :root {
+            --primary: #646cff; /* Púrpura Vite */
+            --secondary: #64ffda; /* Aguamarina */
+            --bg: #1a1a1a;
+            --card-bg: #242424;
+            --text: #ffffff;
+            --gray: #888;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 100px 0;
+            background: radial-gradient(circle at 50% -20%, #646cff33, transparent);
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 90%;
+            margin-top: -50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px;
+            border: 1px solid #333;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            padding: 20px;
+            border-radius: 8px;
+            background: #2f2f2f;
+            border: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .feature:hover {
+            border-color: var(--primary);
+        }
+
+        .feature h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            font-family: monospace;
+            color: var(--gray);
+        }
+
+        .badge {
+            padding: 5px 12px;
+            background: #333;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .deployment-box {
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #1e1e1e, #111);
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        footer {
+            margin: 50px 0;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p style="color: var(--primary); font-weight: bold; letter-spacing: 2px;">FULL STACK READINESS</p>
+    <h1 class="hero-title">Web Development</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>El Futuro de la Web en 3ro</h2>
+        <p>Este año consolidamos los conocimientos de años anteriores para dominar el **Desarrollo Dinámico**. Ya no solo creamos sitios estáticos; aprendemos a consumir APIs, gestionar estados y publicar proyectos en servidores de producción real.</p>
+
+        <div class="tech-stack">
+            <span class="badge">ES6+</span>
+            <span class="badge">ASYNC/AWAIT</span>
+            <span class="badge">JSON</span>
+            <span class="badge">PWA</span>
+        </div>
+
+        <div class="grid">
+            <div class="feature">
+                <h3>JavaScript Avanzado</h3>
+                <p>Uso de Programación Orientada a Objetos (POO) en el cliente y manipulación experta del DOM.</p>
+            </div>
+            <div class="feature">
+                <h3>Optimización SEO</h3>
+                <p>Técnicas para que tus sitios web aparezcan en los primeros resultados de Google.</p>
+            </div>
+            <div class="feature">
+                <h3>Frameworks & Librerías</h3>
+                <p>Introducción a herramientas modernas que agilizan la creación de interfaces complejas.</p>
+            </div>
+        </div>
+
+        <div class="deployment-box">
+            <h4 style="margin-top: 0; color: var(--secondary);">Despliegue y Producción</h4>
+            <p style="margin-bottom: 0;">Aprendemos a utilizar herramientas de control de versiones como **Git** y plataformas de hosting como Vercel o Netlify para que tus proyectos estén disponibles en todo el mundo.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 - Certificación Técnica en Informática | 3er Año
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Física - 3ro de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #00d2ff; /* Azul cian eléctrico */
+            --secondary: #3a7bd5;
+            --bg: #050505;
+            --card-bg: #111111;
+            --text: #e0e0e0;
+            --border: #222;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #001f3f, var(--bg));
+            border-bottom: 2px solid var(--primary);
+            box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
+        }
+
+        .container {
+            max-width: 950px;
+            margin: -40px auto 50px;
+            padding: 0 20px;
+        }
+
+        .main-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 45px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+        }
+
+        h1 { font-size: 3.5rem; margin: 0; letter-spacing: -2px; color: #fff; }
+        h2 { color: var(--primary); font-weight: 400; font-size: 2rem; }
+
+        .physics-formula {
+            background: #000;
+            padding: 30px;
+            border-radius: 12px;
+            font-family: 'Times New Roman', serif;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 30px 0;
+            border: 1px solid var(--primary);
+            color: #fff;
+            box-shadow: inset 0 0 15px rgba(0, 210, 255, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .topic-card {
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid var(--secondary);
+            transition: transform 0.3s;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            background: #222;
+        }
+
+        .physics-it {
+            background: rgba(0, 210, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px dashed var(--primary);
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Física Superior</h1>
+    <p>3ro de Bachillerato - Campos, Ondas y Relatividad</p>
+</header>
+
+<div class="container">
+    <div class="main-card">
+        <h2>Fuerzas que Mueven el Mundo</h2>
+        <p>En el último año, estudiamos cómo la materia y la energía interactúan a través de campos. Desde las Leyes de Maxwell que explican la luz y la electricidad, hasta la termodinámica que rige el calor en los procesadores.</p>
+
+        <div class="physics-formula">
+            $F = k \cdot \frac{q_1 \cdot q_2}{r^2}$
+        </div>
+
+        <div class="grid">
+            <div class="topic-card">
+                <h3>Electromagnetismo</h3>
+                <p>Estudio de las cargas en movimiento, inducción magnética y el funcionamiento de motores y transformadores.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Óptica y Ondas</h3>
+                <p>Comportamiento de la luz y el sonido, fundamental para las comunicaciones por fibra óptica y satélite.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Física Moderna</h3>
+                <p>Introducción a la teoría de la relatividad y la física cuántica, el origen de los transistores modernos.</p>
+            </div>
+        </div>
+
+        <div class="physics-it">
+            <h3 style="margin-top: 0; color: var(--primary);">🔌 Conexión con Sistemas</h3>
+            <p style="margin-bottom: 0;">¿Sabías que el hardware que programas existe gracias a la física de estado sólido? La **Ley de Coulomb** y el **Efecto Fotoeléctrico** son los que permiten que existan los sensores de tu celular, las memorias SSD y las pantallas LED. Entender la física es entender cómo funciona el "hierro" de la tecnología.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 - Análisis de Fenómenos Naturales | 3er Bachillerato Técnico
+</footer>
+
+</body>
+</html>

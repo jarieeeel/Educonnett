@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte Técnico - 2do Bachillerato</title>
+    <style>
+        :root {
+            --primary: #f97316; /* Naranja eléctrico */
+            --secondary: #1e293b;
+            --accent: #fdba74;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #7c2d12);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .hardware-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .hw-card {
+            background: rgba(249, 115, 22, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--primary);
+            text-align: center;
+        }
+
+        .alert-box {
+            background: rgba(239, 68, 68, 0.1);
+            color: #fca5a5;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ef4444;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Soporte Técnico II</h1>
+    <p>2do Año de Bachillerato - Protección Eléctrica y Diagnóstico Avanzado</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Del Ensamblaje a la Gestión de Energía</h2>
+        <p>En segundo año, el enfoque se desplaza hacia la infraestructura que sostiene a los equipos. Aprendemos a calcular cargas eléctricas, implementar sistemas de respaldo (UPS) y realizar diagnósticos profundos mediante herramientas de software y hardware profesional.</p>
+        
+        <div class="alert-box">
+            ⚡ Enfoque en Prevención: El 60% de los fallos de hardware en servidores se deben a problemas de suministro eléctrico.
+        </div>
+
+        <h3>Unidades de Competencia:</h3>
+        <div class="hardware-grid">
+            <div class="hw-card">
+                <strong>Instalaciones Eléctricas</strong>
+                <p>Cálculo de vataje, conexiones a tierra y reguladores de voltaje.</p>
+            </div>
+            <div class="hw-card">
+                <strong>Diagnóstico Lógico</strong>
+                <p>Uso de herramientas de recuperación de datos y testeo de memoria/discos.</p>
+            </div>
+            <div class="hw-card">
+                <strong>Dispositivos Móviles</strong>
+                <p>Arquitectura y reparación básica de smartphones y tablets.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Mantenimiento Correctivo Avanzado</h2>
+        <p>Aprendemos a identificar problemas que no se solucionan con una limpieza básica. Esto incluye:</p>
+        <ul>
+            <li><strong>Electrónica Básica:</strong> Uso del multímetro para medir voltajes en fuentes de poder y tarjetas madre.</li>
+            <li><strong>BIOS/UEFI:</strong> Configuración avanzada, actualización de firmware y gestión de seguridad de arranque.</li>
+            <li><strong>Optimización de Sistemas:</strong> Depuración de procesos y gestión de recursos críticos en estaciones de trabajo.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Autonomía Técnica:</strong> Capacidad para diseñar el entorno eléctrico seguro de una oficina.</li>
+                    <li><strong>Reparación Especializada:</strong> Habilidades para recuperar equipos que otros darían por perdidos.</li>
+                    <li><strong>Ahorro Operativo:</strong> Prevención de daños costosos mediante el uso correcto de UPS y supresores.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Riesgos Eléctricos:</strong> El manejo de voltajes requiere protocolos de seguridad estrictos.</li>
+                    <li><strong>Herramientas Específicas:</strong> Requiere inversión en equipos de medición (multímetros, testers).</li>
+                    <li><strong>Responsabilidad:</strong> Un mal cálculo eléctrico puede causar incendios o daños masivos.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Especialización Técnica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

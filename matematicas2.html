@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas - 2do de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #22c55e; /* Verde Matrix */
+            --secondary: #064e3b;
+            --accent: #4ade80;
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #022c22);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        
+        .math-display {
+            background: #000;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid var(--primary);
+            box-shadow: inset 0 0 10px rgba(34, 197, 94, 0.2);
+        }
+
+        .math-tex {
+            font-size: 2rem;
+            color: var(--primary);
+            display: block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .info-box {
+            background: rgba(34, 197, 94, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 4px solid var(--primary);
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matemáticas II</h1>
+    <p>2do Año de Bachillerato - Análisis, Límites y Derivadas</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Hacia el Cálculo Infinitesimal</h2>
+        <p>En este curso, dejamos atrás las funciones estáticas para estudiar el cambio. Aprendemos a calcular la pendiente de una curva en un punto exacto y a predecir comportamientos de funciones cuando tienden al infinito.</p>
+        
+        <h3>Bloques Curriculares:</h3>
+        <ul>
+            <li><strong>Límites y Continuidad:</strong> Comportamiento de funciones cerca de puntos críticos.</li>
+            <li><strong>Derivadas:</strong> Cálculo de la razón de cambio instantánea y optimización.</li>
+            <li><strong>Sistemas de Ecuaciones:</strong> Uso de matrices y determinantes para resolver problemas de múltiples variables.</li>
+            <li><strong>Probabilidad Avanzada:</strong> Distribuciones binomiales y normales aplicadas al análisis de datos.</li>
+        </ul>
+    </section>
+
+    <div class="math-display">
+        <span class="math-tex">$$\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e$$</span>
+        <p style="color: #64748b; font-size: 0.9rem; margin-top: 10px;">El límite que define la base de los logaritmos naturales</p>
+    </div>
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Optimización:</strong> Aprendes a encontrar el máximo beneficio o el mínimo costo en un proceso.</li>
+                    <li><strong>Base Tecnológica:</strong> Esencial para entender redes neuronales y machine learning.</li>
+                    <li><strong>Prestigio Académico:</strong> Dominar el cálculo te prepara para cualquier facultad de ingeniería.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Abstracción Alta:</strong> Conceptos como el "infinito" o "hacer x tender a cero" requieren mucha imaginación.</li>
+                    <li><strong>Procedimientos Largos:</strong> Un error en el primer paso de una derivada arruina 15 minutos de trabajo.</li>
+                    <li><strong>Dependencia:</strong> Si no sabes factorizar perfectamente (1er año), el cálculo será muy difícil.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="info-box">
+            <h3>Matemáticas y Big Data</h3>
+            <p>Para un estudiante de informática, las matemáticas de 2do año son la llave al **Big Data**. El análisis de tendencias, la predicción de tráfico en una red y la optimización de algoritmos de búsqueda dependen directamente del estudio de límites y funciones que realizamos este año.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Formación Académica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

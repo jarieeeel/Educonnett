@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Física - 2do de Bachillerato</title>
+    <style>
+        :root {
+            --primary: #84cc16; /* Verde lima atlético */
+            --secondary: #1a2e05;
+            --accent: #bef264;
+            --bg: #020617;
+            --card-bg: #0f172a;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #365314);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        
+        .fitness-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .fitness-item {
+            background: rgba(132, 204, 22, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--primary);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+
+        .health-tip {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Educación Física</h1>
+    <p>2do Año de Bachillerato - Salud, Rendimiento y Cultura Corporal</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Cuerpo Sano, Mente Programadora</h2>
+        <p>En segundo año, el enfoque es la <strong>condición física autónoma</strong>. Aprendemos a medir nuestra propia capacidad aeróbica, a diseñar planes de entrenamiento básicos y a practicar deportes colectivos entendiendo la importancia del juego limpio y la estrategia de equipo.</p>
+        
+        <div class="fitness-grid">
+            <div class="fitness-item">Resistencia Cardíaca</div>
+            <div class="fitness-item">Flexibilidad</div>
+            <div class="fitness-item">Fuerza Muscular</div>
+            <div class="fitness-item">Coordinación Motriz</div>
+        </div>
+
+        <h3>Contenidos de 2do Año:</h3>
+        <ul>
+            <li><strong>Prácticas Gimnásticas:</strong> Mejora de la postura y control del cuerpo en el espacio.</li>
+            <li><strong>Deportes Colectivos:</strong> Voleibol, Básquet y Fútbol con énfasis en tácticas avanzadas.</li>
+            <li><strong>Salud y Nutrición:</strong> Relación entre el gasto energético y la ingesta calórica.</li>
+            <li><strong>Expresión Corporal:</strong> El uso del movimiento como lenguaje y forma de comunicación.</li>
+        </ul>
+    </section>
+
+    
+
+    <section>
+        <h2>Ventajas y Desventajas</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Reducción de Estrés:</strong> La actividad física libera endorfinas, vitales después de horas de programación.</li>
+                    <li><strong>Prevención de Lesiones:</strong> Aprendes posturas correctas para evitar dolores de espalda al usar la PC.</li>
+                    <li><strong>Trabajo en Equipo:</strong> Los deportes colectivos refuerzan la comunicación necesaria en proyectos IT.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Exigencia Física:</strong> Requiere salir de la zona de confort y mantener una rutina constante.</li>
+                    <li><strong>Riesgo de Lesiones:</strong> Si no se sigue la técnica correcta en los ejercicios, puede haber fatiga muscular.</li>
+                    <li><strong>Disciplina:</strong> Mantener el hábito del ejercicio frente al sedentarismo tecnológico.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+[Image of proper ergonomic posture for sitting at a computer desk]
+
+
+    <section>
+        <div class="health-tip">
+            <h3>El "Bug" del Sedentarismo</h3>
+            <p>Para un estudiante de informática, Educación Física es como un "parche de seguridad" para el cuerpo. Pasar 8 horas frente a una pantalla puede dañar la columna y la vista. Los conocimientos de 2do año sobre ergonomía y estiramientos son esenciales para que tu carrera como desarrollador sea larga y saludable.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Guía de Bienestar Integral | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación y Base de Datos - 2do Bachillerato</title>
+    <style>
+        :root {
+            --primary: #a855f7; /* Violeta neón */
+            --secondary: #1e1b4b;
+            --accent: #d8b4fe;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--secondary), #4c1d95);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        h1 { margin: 0; font-size: 2.5rem; }
+        h2 { color: var(--accent); border-bottom: 2px solid var(--primary); padding-bottom: 10px; }
+        h3 { color: var(--primary); }
+
+        .code-block {
+            background: #000000;
+            color: #10b981;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9rem;
+            margin: 20px 0;
+            border: 1px solid #334155;
+            overflow-x: auto;
+        }
+
+        .db-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .db-item {
+            background: rgba(168, 85, 247, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--primary);
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-v { background: rgba(34, 197, 94, 0.1); border-left: 5px solid #22c55e; padding: 15px; border-radius: 4px; }
+        .card-d { background: rgba(239, 68, 68, 0.1); border-left: 5px solid #ef4444; padding: 15px; border-radius: 4px; }
+        
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Programación y Base de Datos</h1>
+    <p>2do Año de Bachillerato - Desarrollo de Sistemas Estructurados</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Evolución del Aprendizaje</h2>
+        <p>En este segundo año, dejamos atrás la programación secuencial para dominar la <strong>Programación Orientada a Objetos (POO)</strong> y el diseño de bases de datos relacionales. Es el paso fundamental para crear software que realmente pueda manejar información masiva.</p>
+        
+        <div class="code-block">
+            // Ejemplo de Clase en 2do Año<br>
+            public class Estudiante {<br>
+            &nbsp;&nbsp;String nombre;<br>
+            &nbsp;&nbsp;void estudiar() { System.out.println("Aprendiendo DB..."); }<br>
+            }
+        </div>
+
+        <h3>Módulos Principales:</h3>
+        <div class="db-grid">
+            <div class="db-item">
+                <strong>POO</strong>
+                <p>Clases, objetos, herencia y polimorfismo.</p>
+            </div>
+            <div class="db-item">
+                <strong>SQL</strong>
+                <p>Consultas, inserción y manejo de tablas.</p>
+            </div>
+            <div class="db-item">
+                <strong>Modelado</strong>
+                <p>Diagramas Entidad-Relación (DER).</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Bases de Datos Relacionales</h2>
+        <p>Aprendemos a usar sistemas como MySQL o Access para organizar la información de manera lógica, evitando la duplicidad de datos mediante la <strong>Normalización</strong>.</p>
+        <ul>
+            <li><strong>Llaves Primarias (PK):</strong> Identificadores únicos para cada registro.</li>
+            <li><strong>Llaves Foráneas (FK):</strong> Para conectar una tabla con otra.</li>
+            <li><strong>Lenguaje DDL y DML:</strong> Crear tablas y manipular sus datos.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Ventajas y Desventajas de este Nivel</h2>
+        <div class="grid">
+            <div class="card-v">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li><strong>Creación Real:</strong> Puedes diseñar sistemas para pequeños negocios (inventarios, registros).</li>
+                    <li><strong>Alta Demanda:</strong> El manejo de SQL es una de las habilidades mejor pagadas.</li>
+                    <li><strong>Orden:</strong> La POO permite escribir código mucho más limpio y reutilizable.</li>
+                </ul>
+            </div>
+            <div class="card-d">
+                <h3>Desventajas / Retos</h3>
+                <ul>
+                    <li><strong>Complejidad Lógica:</strong> Entender la "herencia" u "objetos" requiere cambiar la forma de pensar.</li>
+                    <li><strong>Diseño Crítico:</strong> Una base de datos mal diseñada desde el inicio es difícil de corregir después.</li>
+                    <li><strong>Sintaxis:</strong> Los lenguajes como Java o C# son más estrictos que los usados en 1ro.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 - Especialización Técnica | 2do Año Bachillerato
+</footer>
+
+</body>
+</html>
