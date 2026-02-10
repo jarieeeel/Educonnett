@@ -483,10 +483,17 @@ function mostrarMaterias() {
     });
 }
 </script>
-
+    function cambiarFondo() {
+    const carrera = document.getElementById("carrera").value;
+    document.body.classList.remove("informatica", "ciencias", "contabilidad");
+    if (carrera) {
+        document.body.classList.add(carrera);
+    }
+}
 </body>
 
 </html>
+
 
 
 
